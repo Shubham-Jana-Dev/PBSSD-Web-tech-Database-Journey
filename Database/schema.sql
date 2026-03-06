@@ -19,3 +19,4 @@ SELECT * from student;
 INSERT into student
 (student_name, age)
 VALUES("Sisimanu",21);
+show database;
