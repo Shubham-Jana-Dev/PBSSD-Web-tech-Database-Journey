@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Simulation</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #1a1a1a, #000); /* Dark space effect */
+            overflow: hidden;
+        }
+
+        /* The Sun */
+        .sun {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, #fff700, #ff8c00);
+            border-radius: 50%;
+            box-shadow: 0 0 50px #ff4500;
+            z-index: 1;
+        }
+
+        /* The Orbit Path */
+        .orbit-path {
+            position: absolute;
+            height: 350px;
+            width: 350px;
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            
+            /* Orbit Animation */
+            animation: orbit 10s linear infinite;
+            
+        }
+
+        /* The Earth */
+        .earth-planet {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle at 30%, #2b82c9, #000); /* Earth-like shading */
+            border-radius: 50%;
+            position: absolute;
+            top: -20px; /* Sits on the orbit line */
+            left: 50%;
+            transform: translateX(-50%);
+            
+            /* Self-Rotation Animation */
+            animation: spin 3s linear infinite;
+        }
+
+        /* Orbiting the Sun */
+        @keyframes orbit {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Spinning on its own axis */
+        @keyframes spin {
+            from { transform: translateX(-50%) rotate(0deg); }
+            to { transform: translateX(-50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sun"></div>
+
+    <div class="orbit-path">
+        <div class="earth-planet"></div>
+    </div>
+
+</body>
+</html>

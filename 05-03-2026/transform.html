@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            background: black;
+            padding-top:25%;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .eartho{
+            height:800px;
+            width:800px;
+            border:0.5px solid white;
+            /* align-items:center; */
+            border-radius:50%;
+            /* padding-top:35px; */
+            /* padding-left:5px; */
+            animation-name: ball;
+            animation-duration: 20s;
+            /* animation-delay: 0s; */
+            animation-iteration-count: infinite;       
+            /* animation-direction: alternate; */
+            animation-timing-function: linear;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        .eartho11{
+            height:700px;
+            width:700px;
+            border:0.5px solid white;
+            border-radius:50%;
+            animation-name: ball;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;       
+            animation-timing-function: linear; 
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        .eartho10{
+            height:600px;
+            width:600px;
+            border:0.5px solid white;
+            border-radius:50%;
+            animation-name: ball;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;       
+            animation-timing-function: linear; 
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        .eartho12{
+            height:500px;
+            width:500px;
+            border:0.5px solid white;
+            border-radius:50%;
+            animation-name: ball;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;       
+            animation-timing-function: linear; 
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        .eartho13{
+            height:400px;
+            width:400px;
+            border:0.5px solid white;
+            border-radius:50%;
+            animation-name: ball;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;       
+            animation-timing-function: linear; 
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        .eartho1{
+            height:300px;
+            width:300px;
+            border:0.5px solid white;
+            /* align-items:center; */
+            border-radius:50%;
+            /* padding-top:35px; */
+            /* padding-left:5px; */
+            animation-name: ball;
+            animation-duration: 10s;
+            /* animation-delay: 0s; */
+            animation-iteration-count: infinite;       
+            /* animation-direction: alternate; */
+            animation-timing-function: linear;
+            transform: translate(-50%, -50%);
+            align-items:center;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            z-index:-1;
+            
+        }
+        
+        .eartho2{
+            height:200px;
+            width:200px;
+            border:0.5px solid white;
+            border-radius:50%;
+            animation-name: ball;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;       
+            animation-timing-function: linear;
+            transform: translate(-50%, -50%);
+            align-items:center;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            z-index:-1;
+        }
+        .sun{
+            width:60px;
+            height:60px;
+            border-radius:50%;
+            background:linear-gradient( #fff700, #ff8c00);
+            box-shadow: 0 0 50px rgb(232, 144, 72);
+            position: absolute;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            
+        }
+        .bol1{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background:linear-gradient(rgb(0, 7, 27),rgb(232, 108, 12),white);
+            box-shadow:2px 0px 50px rgb(173, 173, 237);
+            position: absolute;
+            top: -15px; 
+            left: 50%;
+        }
+        .bol2{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background:linear-gradient(rgb(0, 7, 27),rgb(232, 108, 12),white);
+            box-shadow:2px 0px 50px rgb(173, 173, 237);
+            position: absolute;
+            top: -15px; 
+            left: 50%;
+        }
+        .bol{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background:linear-gradient(rgb(2, 22, 81),rgb(55, 55, 226),white);
+            box-shadow:2px 0px 50px rgb(173, 173, 237);
+            position: absolute;
+            top: -15px; 
+            left: 50%;
+        }
+        .bol11{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background:linear-gradient(rgb(2, 22, 81),rgb(55, 55, 226),white);
+            box-shadow:2px 0px 50px rgb(173, 173, 237);
+            position: absolute;
+            top: -15px; 
+            left: 50%;
+        }
+        .bol10{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background:linear-gradient(rgb(2, 22, 81),rgb(55, 55, 226),white);
+            box-shadow:2px 0px 50px rgb(173, 173, 237);
+            position: absolute;
+            top: -15px; 
+            left: 50%;
+        }
+        .bol12{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background:linear-gradient(rgb(2, 22, 81),rgb(55, 55, 226),white);
+            box-shadow:2px 0px 50px rgb(173, 173, 237);
+            position: absolute;
+            top: -15px; 
+            left: 50%;
+        }
+        .bol13{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background:linear-gradient(rgb(2, 22, 81),rgb(55, 55, 226),white);
+            box-shadow:2px 0px 50px rgb(173, 173, 237);
+            position: absolute;
+            top: -15px; 
+            left: 50%;
+        }
+        @keyframes ball{
+            from{
+                transform:rotate(0deg);
+            }
+            to{
+                transform:rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="eartho">
+        <div class="bol11"></div>
+        <div class="eartho11">
+        <div class="bol10"></div>
+        <div class="eartho10">
+        <div class="bol12"></div>
+        <div class="eartho12">
+        <div class="bol13"></div>
+        <div class="eartho13">
+        <div class="bol"></div>
+        <div class="sun"></div> 
+        <div class="eartho1">
+        <div class="bol1"></div>
+        <div class="eartho2">
+        <div class="bol2"></div>
+        
+    </div>
+</body>
+</html>
