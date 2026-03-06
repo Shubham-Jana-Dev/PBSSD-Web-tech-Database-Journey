@@ -1,0 +1,17 @@
+create database CID;
+use CID;
+create table officer(id int, name varchar(20), post varchar(20), phon_number int, DOB varchar(20));
+desc officer;
+insert into officer VALUES(1223, 'Biswajit', 'SI', 9800, '12-Mar-1994');
+desc officer;
+select * from officer;
+update officer set name = 'Biswajit kar' where name = 'Biswajit';
+select * from officer;
+create table criminal(number int, name varchar(20), crime varchar(100), DOB varchar(20), DOA varchar(20));
+insert into criminal values(19, 'Miraj Barman', 'murder', '13-Apr-2000', '02-02-2024');
+select * from criminal;
+create table stuffs(id_number int, name varchar(20), job_role varchar(20), DOj varchar(12), DOB varchar(12));
+insert into stuffs values(22, 'Dipak Mahato', 'guard', '11-Dec-2023', '12-Jun-1992');
+desc stuffs;
+select * from stuffs;
+show databases;
