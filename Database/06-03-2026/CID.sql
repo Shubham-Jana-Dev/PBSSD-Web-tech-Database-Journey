@@ -15,3 +15,5 @@ insert into stuffs values(22, 'Dipak Mahato', 'guard', '11-Dec-2023', '12-Jun-19
 desc stuffs;
 select * from stuffs;
 show databases;
+select id as 'ID Number',name as "Officer's Name",post as 'Position' from officer;
+select * from officer;
