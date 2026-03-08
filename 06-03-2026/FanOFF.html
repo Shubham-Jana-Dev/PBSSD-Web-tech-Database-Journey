@@ -20,16 +20,11 @@
             animation-iteration-count: infinite;       
             animation-timing-function: linear;
             display: grid;
-            
-            /* justify-content:center; */
-            
             grid-template-rows: repeat(2, 2fr);
             grid-template-columns: repeat(2,2fr) ; 
             gap: -1px;
-            /* padding-left:25%; */
             align-items: center;
             text-align:center;
-            /* transform:skew(45deg); */
         }
         
     .blade1{
@@ -88,26 +83,8 @@
         transform:rotate(-45deg);
         gap:0px;
         background:linear-gradient( black, white);
-        /* transform:skew(deg) ; */
     }
-    /* .p5{
-        height:15px;
-        width:15px;
-        border:1px solid black;
-        border-radius:50%;
-        grid-column-start: 2;
-    grid-column-end: 2;
-    gap:0px; 
-    }*/
-        @keyframes fan{
-            from{
-                transform:rotate(0deg);
-            }
-            to{
-                transform:rotate(360deg);
-
-            }
-        }
+    
 .maincercal{
     display:flex;
     align-items:center;
@@ -177,13 +154,13 @@
 .on{
     height:50px;
     width:60px;
-    background:red;
+    background:rgb(9, 255, 0);
     text-align:center;
 }
 .off{
     height:50px;
     width:60px;
-    background:rgb(0, 255, 60);
+    background:rgb(255, 0, 0);
     text-align:center;
 }
     </style>
@@ -193,7 +170,6 @@
     <div class="roter">
         <div class="p1"><div class="blade1"></div></div>
         <div class="p2"><div class="blade2"></div></div>
-        <!-- <div class="p5"><div class="blade5">4</div></div> -->
         <div class="p3"><div class="blade3"></div></div>
         <div class="p4"><div class="blade4"></div></div>
     </div>
@@ -206,8 +182,8 @@
   <div class="stand03"></div>
   <div class="stand2"></div> 
   <div class="stand20">
-    <div class="on">ON</div>
-    <div class="off">OF</div>
+    <div class="on"><a href="FanONN.html">ON</a></div>
+    <div class="off"> <a href="FanOFF.html">OFF</a></div>
   </div> 
 </body>
 </html>
