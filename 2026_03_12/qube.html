@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            
+        }
+        .container{
+            margin-top:10%;
+            height:100vh;
+            width:100vw;
+            background:2px solid black;
+            background:rgb(255, 255, 255);
+            align-items:center;
+            display:flex;
+            justify-content:center;
+            perspective: 400px;
+            perspective-origin:top,left;
+            border:0.5px solid rgb(205, 101, 101);
+            animation-name: rotation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;       
+            animation-timing-function: linear;
+            display: grid;
+            grid-template-rows: repeat(2, 2fr);
+            grid-template-columns: repeat(2,2fr) ; 
+            gap: -1px;
+            align-items: center;
+
+        }
+        .item1{
+            
+            height:400px;
+            width:400px;
+            background:2px solid black;
+            background:rgb(206, 228, 12);
+            transform:perspective(900px),rotateX(60deg);
+            /* transform:perspective(400px),rotateY(65deg); */
+            /* transform:perspective(900px),rotateZ(6deg); */
+            position:relative;
+            transform:skew(0deg);
+        }
+        .item2{
+            margin-top:-30%;
+            height:400px;
+            width:400px;
+            background:2px solid black;
+            background:rgb(85, 192, 39);
+            /* transform:perspective(400px),rotateX(180deg); */
+            /* transform:perspective(400px),rotateY(65deg); */
+            /* transform:perspective(900px),rotateZ(6deg); */
+            position:relative;
+            transform:skew(91deg);
+        }
+        .item3{
+            height:400px;
+            width:400px;
+            background:2px solid black;
+            background:rgb(192, 110, 39);
+            /* transform:perspective(90px),rotateX(60deg); */
+            /* transform:perspective(400px),rotateY(65deg); */
+            /* transform:perspective(900px),rotateZ(6deg); */
+            transform:skew(10deg);
+        }
+        .item4{
+            height:400px;
+            width:400px;
+            background:2px solid black;
+            background:rgb(47, 34, 98);
+            transform:perspective(900px),rotateX(60deg);
+            /* transform:perspective(400px),rotateY(65deg); */
+            /* transform:perspective(900px),rotateZ(6deg); */
+            position:relative;
+            transform:skew(0deg);
+        }
+        .item5{
+            height:400px;
+            width:400px;
+            background:2px solid black;
+            background:rgb(227, 22, 186);
+            transform:perspective(900px),rotateX(60deg);
+            /* transform:perspective(400px),rotateY(65deg); */
+            /* transform:perspective(900px),rotateZ(6deg); */
+            position:relative;
+            transform:skew(45deg);
+        }
+        .item6{
+            margin-top: 200px;
+            height:400px;
+            width:400px;
+            background:2px solid black;
+            background:rgb(25, 189, 156);
+            transform:perspective(900px),rotateX(60deg);
+            /* transform:perspective(400px),rotateY(65deg); */
+            /* transform:perspective(900px),rotateZ(6deg); */
+            position:relative;
+            transform:skew(0deg);
+        }
+         @keyframes rotatioon{
+            0%{
+                transform:rotate(0deg);
+            }
+            10%{
+                transform:rotate(10deg)
+            }
+            13%{
+                transform:rotate(20deg)
+            }
+            to{
+
+                transform:rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+
+        
+    </div>
+</body>
+</html>
