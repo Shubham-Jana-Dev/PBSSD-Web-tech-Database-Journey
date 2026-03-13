@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipping Book</title>
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:rgb(255, 255, 255);
+        }
+        .mainview{
+            perspective: 600px;
+        }
+        .outside{
+            height:100%;
+            width:100%;
+            position:relative;
+            transform-style: preserve-3D;
+            animation: flip 2s infinite linear;
+        }
+        .front{
+            height:400px;
+            width:400px;
+            background:rgba(112, 112, 218, 0.43);
+            position:absolute;
+            transform:rotateY(0deg) translateZ(100px); 
+        }
+        .right{
+            height:400px;
+            width:400px;
+            background:blue;
+            position:absolute;
+            transform:rotateY(90deg) translateZ(100px); 
+        }
+        .back{
+            height:400px;
+            width:400px;
+            background:rgb(255, 0, 76);
+            position:absolute;
+            transform:rotateY(180deg) translateZ(100px); 
+        }
+        .left{
+            height:400px;
+            width:400px;
+            background:rgb(0, 255, 110);
+            position:absolute;
+            transform:rotateY(-90deg) translateZ(100px); 
+        }
+        .top{
+            height:400px;
+            width:400px;
+            background:rgb(234, 255, 0);
+            position:absolute;
+            transform:rotateX(90deg) translateZ(100px); 
+        }
+        .bottom{
+            height:400px;
+            width:400px;
+            background:rgb(255, 0, 200);
+            position:absolute;
+            transform:rotateX(-90deg) translateZ(100px); 
+        }
+    </style>
 </head>
 <body>
-    <div class="outside">
-        <div class="mainview">
+    <div class="mainview">
+        <div class="outside">
             <div class="front"></div>
             <div class="left"></div>
             <div class="back"></div>
@@ -17,4 +78,16 @@
         </div>
     </div>
 </body>
+<!-- In CSS, you can create a 3‑D effect using these main attributes:
+
+transform – Apply 3‑D transformations like rotateX(), rotateY(), rotateZ(), translateZ(), scaleZ().
+transform-style – Use preserve-3d to maintain 3‑D child transformations.
+perspective – Gives depth to 3‑D elements when applied to the parent.
+perspective-origin – Sets the viewpoint for the 3‑D perspective.
+backface-visibility – Controls visibility of the back of an element in 3‑D space.
+
+Optional helpers:
+box-shadow and text-shadow – Create depth illusions.
+filter: drop-shadow() – Adds realistic shadow effects for 3‑D feel.
+-->
 </html>
