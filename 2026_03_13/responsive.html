@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background: url("https://img.freepik.com/free-photo/cityscape-silhouette-sunset_23-2151982908.jpg?semt=ais_user_personalization&w=740&q=80");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .contain{
+            height:100vh;
+            width:100vw;
+            margin:auto;
+            border: 2px solid blue;
+            background-color:rgb(255, 255, 255);
+            display:flex;
+            flex-direction:row;
+        }
+        #q1{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:blueviolet;
+        }
+        #q2{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:blueviolet;
+        }
+        #q3{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:blueviolet;
+        }
+        #q4{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:blueviolet;
+        }
+        #q5{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:blueviolet;
+        }
+        .item{
+            height:80px;
+            width:20%;
+            /* border:3px solid red; */
+        }
+        @media (max-width:750px){
+            .contain{
+            height:100%;
+            width:100%;
+            flex-direction:column;
+            background:url("https://www.whoa.in/download/cool-funny-images-mobile-wallpapers-hd-wallpapers-for-mobiles-2--mobile-wallpaper");
+            background-size:cover;
+             background-repeat:no-repeat;
+        }
+        .item{
+            background-color:aquamarine;
+        }
+    }
+    h3{
+        font-size:large;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:aliceblue;
+        text-shadow:0 0 23px blue;
+    }
+    button{
+        height:40px;
+        width:70px;
+        background:linear-gradient(rgba(211, 124, 246, 0.712),white);
+        border-radius:9px;
+        color:rgb(187, 0, 255);
+        border:none;
+    }
+    </style>
+</head> 
+
+<body>
+    <div class="contain">
+        <div class="item" id="q1"><h3>Home</h3></div>
+        <div class="item" id="q2"><h3>About</h3></div>
+        <div class="item" id="q3"><h3>Servise</h3></div>
+        <div class="item" id="q4"><h3>Contact</h3></div>
+        <div class="item" id="q5">
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>
