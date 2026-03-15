@@ -10,94 +10,136 @@
             justify-content:center;
             align-items:center;
             height:100vh;
-            background:rgb(255, 255, 255);
+            background:rgb(1, 0, 0);
         }
         .mainview{
-            height: 600px;
-            width: 600px;
-            /* perspective-origin:bottom; */
-            perspective:  900px;
+            height: 100vh;
+            width: 100vw;
+            perspective: initial;
                }
         .outside{
             height:100%;
             width:100%;
             position:relative;
             transform-style: preserve-3D;
-            animation: flip 5s infinite linear;
+            animation: flip 5s 1 linear;
             transform:rotateX(100deg) rotateY(20deg)
         }
-        .front{
-            padding-top: px;
-            height:400px;
-            width:300px;
-            background:rgba(112, 112, 218, 0.43);
+        .page{
+            height:250vh;
+            width:400px;
             position:absolute;
-            /* transform:scaleX3d(145deg) */
-            transform:rotateY(0deg) translateZ(30px); 
+            background:linear-gradient(90deg,white, black);
+            border:0.9px solid black;
         }
-        .page1{
-            padding-top: px;
-            height:400px;
-            width:300px;
-            background:rgb(27, 27, 255);
-            position:absolute;
-            animation: fip-page 3s infinite normal;
-            
+        /* #f1{
+            background:rgb(169, 169, 230);
         }
-        @keyframes fip-page{
-            from{
-                transform:skewY(0deg);
+        #f2{
+            background:rgb(115, 235, 91);
+        }
+        #f3{
+            background:rgb(227, 180, 91);
+        }
+        #f4{
+            background:rgb(230, 169, 229);
+        }
+        #f5{
+            background:rgb(230, 169, 169);
+        }
+        #f6{
+            background:rgb(233, 50, 50);
+        }
+        #f7{
+            background:rgb(11, 133, 239);
+        }
+        #f8{
+            background:rgb(250, 112, 220);
+        }
+        #f9{
+            background:rgb(236, 89, 89);
+        }
+        #f10{
+            background:rgb(169, 224, 230);
+        } */
+        .mainp{
+            width:800px;
+            background:none;
+            display:flex; 
+            animation-name: fip-page;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease-in-out;
+        }
+        #p1{
+            animation-delay:1s;
+        }
+        #p2{
+            animation-delay:0.9s;
+        }
+        #p3{
+            animation-delay: 0.8s;
+        }
+        #p4{
+            animation-delay: 0.7s;
+        }
+        #p5{
+            animation-delay: 0.6s;
+        }
+        #p6{
+            animation-delay: 0.5s;
+        }
+        #p7{
+            animation-delay: 0.4s;
+        }
+        #p8{
+            animation-delay: 0.2s;
+        }
+        #p9{
+            animation-delay: 0.1s;
+        }
+        #p10{
+            animation-delay: 0s;
+        }
+        @keyframes fip-page {
+             from{
+                transform:rotateY(170deg) translateZ(0px)
             }
             to{
-                transform:skewY(180deg);
+                transform:rotateY(360deg) translateZ(0px)
             }
         } 
         .right{
-            height:400px;
-            width:60px;
-            background:rgba(0, 0, 255, 0.516);
+            height:250vh;
+            width:400px;
+            background:linear-gradient(90deg,rgb(114, 19, 19), black);
             position:absolute;
-            transform:rotateY(90deg) translateZ(271px); 
+            transform:rotateY(170deg) translateZ(36px) translateX(-397.5px); 
         }
         .back{
-            height:400px;
-            width:300px;
-            background:rgba(255, 0, 76, 0.631);
+            height:250vh;
+            width:400px;
+            background:linear-gradient(90deg,rgb(114, 19, 19), black);
             position:absolute;
-            transform:rotateY(180deg) translateZ(28.99px); 
+            transform:rotateY(0deg) translateZ(0px); 
         }
-        .left{
-            height:400px;
-            width:60px;
-            background:rgba(0, 255, 110, 0.547);
-            position:absolute;
-            transform:rotateY(-90deg) translateZ(28px); 
-        }
-        .top{
-            height:60px;
-            width:300px;
-            background:rgb(234, 255, 0);
-            position:absolute;
-            transform:rotateX(90deg) translateZ(30px); 
-        }
-        .bottom{
-            height:60px;
-            width:300px;
-            background:rgb(255, 0, 200);
-            position:absolute;
-            transform:rotateX(-90deg) translateZ(368px); 
-        }
+       
         .outside{
-            transition: rotateX(30deg) rotateY(30deg) ;
+            margin-top: 15vh;
+            margin-left: 6vw;
+            transition: rotateX(40deg) rotateY(-90deg) 
             
         }
 
-        @keyframes flijp{
+        @keyframes fl-ip{
             from{
-                transform:rotateX(0deg) rotateY(0deg)
+                /* transition: rotateX(40deg) rotateY(-30deg); */
+                translate: -50%;
             }
             to{
-                transform:rotateX(360deg) rotateY(360deg)
+                /* transition: rotateX(-40deg) rotateY(30deg); */
+                translate:  25% ;
             }
         } 
     </style>
@@ -105,11 +147,34 @@
 <body>
     <div class="mainview">
         <div class="outside">
-            <div class="front"></div>
-            <div class="page1"></div>
-            <div class="left"></div>
+            <div class="mainp" id="p1">
+                <div class="page" id="f1" ></div>
+            </div>
+            <div class="mainp" id="p2">
+                <div class="page" id="f2"></div>    
+            </div>
+            <div class="mainp" id="p3">
+                <div class="page" id="f3" ></div>    
+            </div>
+            <div class="mainp" id="p4">
+                <div class="page" id="f4"></div>    
+            </div>
+            <div class="mainp" id="p5">
+                <div class="page" id="f5"></div>    
+            </div>
+            <div class="mainp" id="p6">
+                <div class="page" id="f6"></div>    
+            </div>
+            <div class="mainp" id="p7">
+                <div class="page" id="f7"></div>    
+            </div>
+            <div class="mainp" id="p8">
+                <div class="page" id="f8"></div>    
+            </div>
+            <div class="left"> </div>
             <div class="back"></div>
             <div class="top"></div>
+            <!-- <div class="coverright"> -->
             <div class="right"></div>
             <div class="bottom"></div>
         </div>
