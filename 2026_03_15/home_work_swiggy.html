@@ -1,107 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <style>
-        *{
-            font-family:"Gill Sans", sans-serif;
+        * {
+            font-family: "Gill Sans", sans-serif;
         }
-        body{
-            margin:0;
-            padding:0;
-            background:rgb(255,82,0);
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(255, 82, 0);
         }
-        .side_2{
+
+        .side_2 {
             margin-top: 11vh;
-            height:100vh;
-            width:100vw;
-            display:flex;
-            justify-content:space-around;
-            position:absolute;
-            gap:60vw;
-
-
-        }
-        .left_img{
-            height:800px;
-            width:400px;
-            background:url("assets/Veggies_new.png.avif");
-            background-size:cover;
-        }
-        .right_img{
-            height:800px;
-            width:400px;
-            background:url("assets/Sushi_replace.png.avif");
-            background-size:cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            z-index: -100;
+            gap: 60vw;
 
         }
-        .navbar{
+
+        .left_img {
+            height: 800px;
+            width: 400px;
+            background: url("assets/Veggies_new.png.avif");
+            background-size: cover;
+        }
+
+        .right_img {
+            height: 800px;
+            width: 400px;
+            background: url("assets/Sushi_replace.png.avif");
+            background-size: cover;
+
+        }
+
+        .navbar {
             /* margin-top: */
-            padding-top:60px;
-            height:30px;
-            width:100vw;
-            background:none;
-            display:flex;
-            justify-content:space-around;
-            align-items:center;
+            padding-top: 60px;
+            height: 30px;
+            width: 100vw;
+            background: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             /* width:  */
         }
-        .logo{
-            height:6.7vh;
-            width:12vw;
-            background:url("assets/swiggy_logo_white.png.avif");
-            background-size:cover;
+
+        .logo {
+            height: 6.7vh;
+            width: 12vw;
+            background: url("assets/swiggy_logo_white.png.avif");
+            background-size: cover;
 
         }
-        .nav_right{
-            display:flex;
-            gap:30px;
-            align-items:center;
+
+        .nav_right {
+            display: flex;
+            gap: 30px;
+            align-items: center;
         }
-        h5{
-            font-size:x-large;
-            color:white;
+
+        h5 {
+            font-size: x-large;
+            color: white;
         }
-        .ga{
-            height:70px;
-            width:200px;
-            background:none;
-            font-size:x-large;
+
+        .ga {
+            height: 70px;
+            width: 200px;
+            background: none;
+            font-size: x-large;
             border: 1px solid white;
             border-radius: 18px;
             color: white;
         }
-        .sin{
-            height:70px;
-            width:180px;
-            background:black;
-            font-size:x-large;
-            border:none;
+
+        .sin {
+            height: 70px;
+            width: 180px;
+            background: black;
+            font-size: x-large;
+            border: none;
             border-radius: 19px;
             color: white;
+        }
+        .upper_content{
+            display:flex;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+            align-items:center;
+            justify-content:center;
+            
+            /* position:absolute; */
+            /* z-index:-8; */
+        }
+        .main_text{
+            text-align:center;
+            color:white;
+            font-size:70px;
+            /* position:absolute; */
+            /* z-index:-8; */
+        }
+        .search_boxes{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            position:absolute;
+            margin-top:35vh;
+            gap:20px;
+        }
+        .location{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        #i_l{
+            position:relative;
+            z-index:-8;
+            left:50px;
+            height:30px;
+            width:30px;
+            color:rgb(255, 82, 0);
+        }
+        #i_s{
+            position:relative;
+            z-index: -8;
+            height:25px;
+            width: 25px;
+            right:60px;
+            color:rgb(151, 145, 145);
+        }
+        input{
+        
+            height:80px;
+            font-size:x-large;
+            border:2px solid rgb(208, 204, 204);
+            border-radius:20px;
+            position:relative;
+            z-index:-9;
+        }
+        #loc_input{
+            width:400px;
+        }
+        #search_input{
+            width:600px;
+            position:relative;
+            z-index: -9;
+        }
+        .search{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .loc-icon{
+            margin-left:100px;
+            color:rgb(5, 3, 2);
         }
     </style>
 </head>
 <div class="navbar">
-<div class="nav_left">
-    <div class="logo">
+    <div class="nav_left">
+        <div class="logo">
+        </div>
     </div>
-</div>
-<div class="nav_right">
-    <div class="r1"><h5>Swiggy Corporate</h5></div>
-    <div class="r2"><h5>Partner with us</h5></div>
-    <button class="ga">Get the App</button>
-    <button class="sin">Sign in</button>
-</div>
-</div>
+    <div class="nav_right">
+        <div class="r1">
+            <h5>Swiggy Corporate</h5>
+        </div>
+        <div class="r2">
+            <h5>Partner with us</h5>
+        </div>
+        <button class="ga">Get the App</button>
+        <button class="sin">Sign in</button>
+    </div>
+    </div>
+    <div class="upper_content">
+        <div class="main_text">
+            <p>Order food & groceries. Discover<br> best restaurants. Swiggy it!</h1>
+        </div>
+        <div class="search_boxes">
+            <div class="location">
+                <div class="loc-icon"><svg id="i_l" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                </div>
+                <input id="loc_input" type="text" placeholder="         Enter your delivary location">
+            </div>
+            <div class="search">
+                <input id="search_input" type="text" placeholder="   Search for restaurants, item or more">
+                <div  class="search-icon">
+                    <svg id="i_s" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="quici_glanse">
+            <div class="food_delivery"></div>
+            <div class="instamart"></div>
+            <div class="dineout"></div>
+        </div>
+    </div>
 <div class="side_2">
-<div class="left_img"></div>
-<div class="right_img"></div>
+    <div class="left_img"></div>
+    <div class="right_img"></div>
 </div>
+
 <body>
-    
+
 </body>
+
 </html>
