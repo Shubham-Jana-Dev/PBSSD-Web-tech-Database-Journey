@@ -187,6 +187,10 @@
             width:100vw;
             background:white;
             margin-top:50%;
+            overflow-x: auto;         
+            overflow-y: hidden;       
+            gap: 15px;                
+            padding: 20px;
             
         }
         #b_food_op{
@@ -194,11 +198,15 @@
             font-size:xx-large;
         }
         .sc-etV{
-            height:150px;
-            width:150px;
-            background:url("assets/Desserts.png.avif");
-            background-size:cover;
+            height:250px;
+            width:250px;
             border:none;
+            flex: 0 0 150px;         
+            scroll-snap-align: start;
+            
+        }
+        .mis_upper::-webkit-scrollbar {
+        display: none;
         }
         #T_i1{
             background:url("assets/North\ Indian.png");
