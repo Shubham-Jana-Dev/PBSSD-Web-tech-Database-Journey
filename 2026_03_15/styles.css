@@ -182,11 +182,19 @@
             background:url("assets/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png.avif");
             background-size:cover;
         }
+        #b_food_op{
+            height:5vh;
+            width:100vw;
+            margin-top:50%;
+            background:white;
+            font-size:xxx-large
+            
+        }
         .mid_upper{
             height:70vh;
             width:100vw;
             background:white;
-            margin-top:50%;
+            margin-top:0%;
             overflow-x: auto;         
             overflow-y: hidden;       
             gap: 15px;                
@@ -205,7 +213,7 @@
             scroll-snap-align: start;
             
         }
-        .mis_upper::-webkit-scrollbar {
+        .mid_upper::-webkit-scrollbar {
         display: none;
         }
         #T_i1{
@@ -294,4 +302,46 @@
             display:grid;
             grid-template-rows: repeat(2, 1fr);
             grid-template-columns: repeat(10,1fr) ;
+        }
+        #b_food_op2{
+            height:60px;
+            width:100vw;
+            margin-top:0%;
+            background:white;
+            font-size:xx-large
+        }
+        .mid_upper2{
+            height:70vh;
+            width:300vw;
+            background:white;
+            margin-top:0%;
+            overflow-x: auto;         
+            overflow-y: hidden;       
+            gap: 15px;                
+            padding: 20px;
+            
+        }
+        .mid_upper2::-webkit-scrollbar {
+        display: none;
+        }
+        .the_items2{
+            display:flex;
+            gap: 35px;
+        }
+        .sc-etV2{
+            height:28vh;
+            width:48vw;
+            border:none;
+            flex: 0 0 150px;         
+            scroll-snap-align: start;
+        }
+        #T2_i1{
+            background:url("assets/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a.png");
+            background-size:cover;
+            
+        }
+        #T2_i2{
+            background:url("assets/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a.png");
+            background-size:cover;
+           
         }
