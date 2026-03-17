@@ -304,7 +304,7 @@
             grid-template-columns: repeat(10,1fr) ;
         }
         #b_food_op2{
-            height:60px;
+            height:6vh;
             width:100vw;
             margin-top:0%;
             background:white;
@@ -312,7 +312,7 @@
         }
         .mid_upper2{
             height:70vh;
-            width:300vw;
+            width:100vw;
             background:white;
             margin-top:0%;
             overflow-x: auto;         
@@ -326,11 +326,12 @@
         }
         .the_items2{
             display:flex;
-            gap: 35px;
+            justify-content:space-between;
+            gap: 35px; 
         }
         .sc-etV2{
-            height:28vh;
-            width:48vw;
+            height: 180px;
+            width: 145px;
             border:none;
             flex: 0 0 150px;         
             scroll-snap-align: start;
