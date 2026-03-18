@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src:url("assets/Gilroy-Medium.woff2")
+    format('woff2')
+
+}
 * {
-            font-family: "Gill Sans", sans-serif;
+            font-family: Gilroy-Medium;
         }
 
         body {
