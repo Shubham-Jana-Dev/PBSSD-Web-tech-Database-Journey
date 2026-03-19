@@ -316,6 +316,13 @@
             background:white;
             font-size:xx-large
         }
+         #b_food_op23{
+            height:6vh;
+            width:100vw;
+            margin-top:0%;
+            background:white;
+            font-size:xx-large
+        }
         .mid_upper2{
             height:40vh;
             width:100vw;
@@ -327,11 +334,31 @@
             padding: 20px;
             
         }
+        .mid_upper23{
+            height:40vh;
+            width:60vw;
+            background:white;
+            margin-top:0%;
+            overflow-x: auto;         
+            overflow-y: hidden;       
+            gap: 15px;                
+            padding: 20px;
+            
+        }
         .mid_upper2::-webkit-scrollbar {
+        display: none;
+        }
+        .mid_upper23::-webkit-scrollbar {
         display: none;
         }
         .the_items2{
             height:5vh;
+            display:flex;
+            justify-content:space-between;
+            gap: 35px; 
+        }
+        .the_items23{
+            height:7vh;
             display:flex;
             justify-content:space-between;
             gap: 35px; 
@@ -342,6 +369,19 @@
             border:none;
             flex: 0 0 150px;         
             scroll-snap-align: start;
+        }
+        .sc-etV23{
+            /* position:absolute; */
+            height: 34vh;
+            width: 35vw;
+            border:none;
+            /* flex: 0 0 150px;          */
+            scroll-snap-align: start;
+        }
+         #T23_i1{
+            background:url("assets/t23_i1.JPG");
+            background-size:cover;
+            
         }
         #T2_i1{
             background:url("assets/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a.png");
@@ -468,4 +508,18 @@
             font-size:x-large;
             text-align:center;
             
+        }
+        .sc-etV23{
+            height: 180px;
+            width: 145px;
+            border:none;
+            flex: 0 0 150px;         
+            scroll-snap-align: start;
+        }
+        .lower_mid{
+            height:50vh;
+            width:100vw;
+            background:white;
+            display:flex;
+            justify-content:center;
         }
