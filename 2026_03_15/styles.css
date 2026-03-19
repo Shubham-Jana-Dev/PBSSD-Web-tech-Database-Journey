@@ -32,7 +32,7 @@
             background-size: cover;
         }
 
-        .right_img {
+    .right_img {
             height: 800px;
             width: 400px;
             background: url("assets/Sushi_replace.png.avif");
@@ -41,7 +41,6 @@
         }
 
         .navbar {
-            /* margin-top: */
             padding-top: 60px;
             height: 30px;
             width: 100vw;
@@ -103,8 +102,6 @@
             text-align:center;
             color:white;
             font-size:70px;
-            /* position:absolute; */
-            /* z-index:-8; */
         }
         .search_boxes{
             display:flex;
@@ -316,13 +313,6 @@
             background:white;
             font-size:xx-large
         }
-         #b_food_op23{
-            height:6vh;
-            width:100vw;
-            margin-top:0%;
-            background:white;
-            font-size:xx-large
-        }
         .mid_upper2{
             height:40vh;
             width:100vw;
@@ -334,31 +324,11 @@
             padding: 20px;
             
         }
-        .mid_upper23{
-            height:40vh;
-            width:60vw;
-            background:white;
-            margin-top:0%;
-            overflow-x: auto;         
-            overflow-y: hidden;       
-            gap: 15px;                
-            padding: 20px;
-            
-        }
         .mid_upper2::-webkit-scrollbar {
-        display: none;
-        }
-        .mid_upper23::-webkit-scrollbar {
-        display: none;
+            display: none;
         }
         .the_items2{
             height:5vh;
-            display:flex;
-            justify-content:space-between;
-            gap: 35px; 
-        }
-        .the_items23{
-            height:7vh;
             display:flex;
             justify-content:space-between;
             gap: 35px; 
@@ -367,19 +337,36 @@
             height: 180px;
             width: 145px;
             border:none;
-            flex: 0 0 150px;         
+            flex: 0 0 160px;         
             scroll-snap-align: start;
         }
-        .sc-etV23{
-            /* position:absolute; */
-            height: 34vh;
-            width: 35vw;
-            border:none;
-            /* flex: 0 0 150px;          */
-            scroll-snap-align: start;
+        #b_food_op23{
+        height:6vh;
+        width:100vw;
+            margin-top:0%;
+            background:white;
+            font-size:xx-large
         }
+        .mid_upper23{
+            height:60vh;
+            width:80vw;
+            background:white;
+            overflow-x: auto;         
+            overflow-y: hidden;       
+            
+        }
+        .mid_upper23::-webkit-scrollbar {
+        display: none;
+        }
+        .the_items23{
+            height:1vh;
+            display:flex;
+            justify-content:space-between;
+            gap: 15px; 
+        }
+    
          #T23_i1{
-            background:url("assets/t23_i1.JPG");
+            background:none;
             background-size:cover;
             
         }
@@ -510,11 +497,30 @@
             
         }
         .sc-etV23{
-            height: 180px;
-            width: 145px;
+            height: 440px;
+            width: 3px;
             border:none;
-            flex: 0 0 150px;         
+            flex: 0 0 440px;         
             scroll-snap-align: start;
+            border-radius:20px;
+            /* display:flex;
+            justify-content:center; */
+            align-items:center;
+
+        }
+        .inter_image{
+            
+            /* position:relative; */
+            height:220px;
+            width:440px;
+            background:blue;
+            border-radius: 20px 20px 0 0;
+        }
+        .down_white{
+            height:220px;
+            width:440px;
+            background:rgb(187, 187, 219);
+            border-radius: 0 0 20px 20px;
         }
         .lower_mid{
             height:50vh;
@@ -522,4 +528,12 @@
             background:white;
             display:flex;
             justify-content:center;
+        }
+
+        #imag1{
+            height:220px;
+            width:440px;
+            /* background:linear-gradient(white,black); */
+            background-image:url("assets/t23_i1.JPG");
+            background-size: cover;
         }
