@@ -364,12 +364,6 @@
             justify-content:space-between;
             gap: 15px; 
         }
-    
-         #T23_i1{
-            background:none;
-            background-size:cover;
-            
-        }
         #T2_i1{
             background:url("assets/43e3c412-4ca9-4894-82ba-24b69da80aa6_06c0d2a9-804c-4bf1-8725-7ebd234e144a.png");
             background-size:cover;
@@ -504,6 +498,8 @@
             scroll-snap-align: start;
             border-radius:20px;
             align-items:center;
+            background:none;
+            background-size:cover;
 
         }
         .inter_image{
@@ -529,10 +525,11 @@
         }
 
         #imag1{
-            height:220px;
-            width:440px;
-            /* background:linear-gradient(white,black); */
             background-image:url("assets/t23_i1.JPG");
+            background-size: cover;
+        }
+        #imag2{
+            background-image:url("assets/t23_i2.jpeg");
             background-size: cover;
         }
         .title_reat{
