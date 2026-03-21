@@ -532,6 +532,32 @@
             background-image:url("assets/t23_i2.jpeg");
             background-size: cover;
         }
+        #imag3{
+            background-image:url("assets/t23_i3.jpg");
+            background-size: cover;
+        }
+        #imag4{
+            background-image:url("assets/t23_i4.jpg");
+            background-size: cover;
+        }
+        #imag5{
+            background-image:url("assets/t23_i5.jpg");
+            background-size: cover;
+        }
+        #imag6{
+            background-image:url("assets/t23_i6.jpg");
+            background-size: cover;
+        }
+        #imag7{
+            background-image:url("assets/t23_i7.jpg");
+            background-size: cover;
+        }
+        #imag8{
+            background-image:url("assets/t23_i8.jpg");
+            background-size: cover;
+        }
+
+
         .title_reat{
             height:220px;
             width:440px;
@@ -637,4 +663,7 @@
         .eet{
             padding-left:20px;
         }
-
+        a{
+            text-decoration:none;
+            color:white;
+        }
