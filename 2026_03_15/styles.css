@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             background: rgb(255, 82, 0);
+            overflow-x:hidden;
         }
 
         .side_2 {
@@ -538,7 +539,7 @@
             background-size: cover;
         }
         #imag4{
-            background-image:url("assets/t23_i4.jpg");
+            background-image:url("assets/t23_i4.JPG");
             background-size: cover;
         }
         #imag5{
@@ -546,11 +547,11 @@
             background-size: cover;
         }
         #imag6{
-            background-image:url("assets/t23_i6.jpg");
+            background-image:url("assets/t23_i6.JPG");
             background-size: cover;
         }
         #imag7{
-            background-image:url("assets/t23_i7.jpg");
+            background-image:url("assets/t23_i7.JPG");
             background-size: cover;
         }
         #imag8{

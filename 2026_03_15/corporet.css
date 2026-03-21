@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src:url("assets/Gilroy-Medium.woff2")
+    format('woff2')
+
+}
+*{
+    font-family: Gilroy-Medium;
+}
 body{
     margin:0;
     padding:0;
@@ -9,7 +18,7 @@ body{
     display:flex;
     align-items:center;
     padding-left:2%;
-    gap:10%;
+    gap:7%;
 }
 .logo{
     width:11%;
@@ -25,10 +34,42 @@ body{
     border:2px dotted red;
     display:flex;
     align-items:center;
-    gap:3%;
+    gap:1%;
 }
 .right_child{
     height:2rem;
-    width:12%;
+    width:17%;
     border:2px dotted green;
+    text-align:center;
+}
+#crn3{
+    width:27%;
+}
+#crn5{
+    width:20%;
+}
+a{
+    text-decoration:none;
+    font-size:x-large;
+    font-weight:200;
+    color:rgb(62, 61, 61);
+}
+.main_bg_map{
+    height:70rem;
+    width:100%;
+    background:url("assets/bg_map.webp");
+    background-size:cover;
+    align-items:center;
+}
+.main_line{
+    height:10rem;
+    width:100%;
+    border:2px dotted green;
+    text-align:center;
+    padding-top:5rem;
+    font-size:x-large;
+    
+}
+#heading{
+    font-weight:3000;
 }
