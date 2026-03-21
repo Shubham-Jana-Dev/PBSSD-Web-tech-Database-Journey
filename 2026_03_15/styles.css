@@ -341,18 +341,19 @@
             scroll-snap-align: start;
         }
         #b_food_op23{
-        height:6vh;
-        width:100vw;
+        height:8rem;
+        width:100%;
             margin-top:0%;
             background:white;
             font-size:xx-large
         }
         .mid_upper23{
-            height:60vh;
-            width:80vw;
+            height:90%;
+            width:80%;
             background:white;
             overflow-x: auto;         
-            overflow-y: hidden;       
+            overflow-y: hidden; 
+                 
             
         }
         .mid_upper23::-webkit-scrollbar {
