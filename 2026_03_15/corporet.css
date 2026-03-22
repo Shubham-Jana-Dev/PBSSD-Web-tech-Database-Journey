@@ -4,6 +4,12 @@
     format('woff2')
 
 }
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src:url("assets/Gilroy-ExtraBold.ttf")
+    format('truetype')
+
+}
 *{
     font-family: Gilroy-Medium;
 }
@@ -77,17 +83,19 @@ a{
     z-index:1;
 }
 h1{
+    font-family:Gilroy-ExtraBold;
     font-size:xxx-large;
-    font-weight:200;
+    /* font-weight:200; */
 }
 .right_arrow{
-            height:19rem;
-            width:27%;
-            background:url("assets/about-banner-right-arrow.webp");
-            background-repeat:no-repeat;
-            background-size:100% 100%;
-            margin-left:73%;
-            border:2px dotted rgb(183, 16, 43);
+    position: absolute;
+    right: 0; 
+    top: 20%; 
+    height: 19rem;
+    width: 27%;
+    background: url("assets/about-banner-right-arrow.webp") no-repeat;
+    background-size: 100% 100%;
+    border: 2px dotted rgb(183, 16, 43);
         }
 .left_arrow{
             height:14rem;
@@ -119,6 +127,11 @@ h1{
     right: 0; /* Slide into view */
 }
 @media (orientation: portrait){
+    body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
 .right_portion{
     display:none;
 }
@@ -168,4 +181,63 @@ h1{
 .side_bar a {
     font-size: 1.2rem;
     display: block;
+}
+.main_line{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#tag_line{
+    font-size:xx-large;
+    color:rgb(192, 187, 187);
+}
+.tag_l{
+    width:90%;
+    border:2px dotted gray;
+
+}
+.upper_ani{
+    margin-top:4%;
+    width:100%;
+    border:2px dotted rgb(255, 0, 136);
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+.food{
+    width:12%;
+    height:15rem;
+    border: 2px dotted rgb(118, 104, 104);
+}
+#ani_1{
+    background:url("assets/food.webp") no-repeat;
+    background-size: 100% 100%;
+}
+#ani_2{
+    background:url("assets/banner-Instamart.png") no-repeat;
+    background-size: 100% 100%;
+}
+#ani_3{
+    background:url("assets/dineout.webp") no-repeat;
+    background-size: 100% 100%;
+}
+#ani_4{
+    width:6%;
+    height:11rem;
+    /* padding-bottom: 30%; */
+    background:url("assets/swiggy-sign.webp") no-repeat;
+    background-size: 100% 100%;
+}
+#ani_5{
+    
+    background:url("assets/Scenes-new-icon.png") no-repeat;
+    background-size: 100% 100%;
+}
+.down_ani{
+    width:100%;
+    border:2px dotted rgb(255, 0, 136);
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:4%;
+    
 }
