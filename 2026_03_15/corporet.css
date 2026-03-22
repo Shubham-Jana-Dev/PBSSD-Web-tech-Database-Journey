@@ -163,7 +163,7 @@ h1{
 
 
 .logo{
-    width: 120px; 
+        width: 120px; 
         height: 40px;
         background-size: contain; 
         background-repeat: no-repeat;
@@ -197,39 +197,66 @@ h1{
 
 }
 .upper_ani{
-    margin-top:4%;
     width:100%;
     border:2px dotted rgb(255, 0, 136);
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;
     
 }
 .food{
-    width:12%;
+    
+    width:50%;
     height:15rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     border: 2px dotted rgb(118, 104, 104);
 }
 #ani_1{
+    animation-name: pop1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;       
+    animation-timing-function: normal; 
     background:url("assets/food.webp") no-repeat;
     background-size: 100% 100%;
+    
 }
 #ani_2{
+    animation-name: pop1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;       
+    animation-timing-function: normal;
+    animation-delay:2s;
     background:url("assets/banner-Instamart.png") no-repeat;
     background-size: 100% 100%;
+    
 }
 #ani_3{
+    animation-name: pop3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;       
+    animation-timing-function: normal;
+    animation-delay:3s;
     background:url("assets/dineout.webp") no-repeat;
     background-size: 100% 100%;
 }
 #ani_4{
-    width:6%;
-    height:11rem;
-    /* padding-bottom: 30%; */
+    animation-name: pop4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;       
+    animation-timing-function: normal;
+    animation-delay:4s;
+    width:28%;
+    height:13rem;
     background:url("assets/swiggy-sign.webp") no-repeat;
     background-size: 100% 100%;
 }
 #ani_5{
-    
+    animation-name: pop5;
+    animation-duration: 1s;
+    animation-iteration-count: 1;       
+    animation-timing-function: normal;
+    animation-delay:5s;
     background:url("assets/Scenes-new-icon.png") no-repeat;
     background-size: 100% 100%;
 }
@@ -237,7 +264,140 @@ h1{
     width:100%;
     border:2px dotted rgb(255, 0, 136);
     display:flex;
-    justify-content:space-evenly;
-    margin-top:4%;
-    
+    justify-content:center;
 }
+.ani1{
+    width:25%;
+    border:2px dotted pink;
+    display:flex;
+    justify-content:center;
+}
+
+@keyframes pop1{
+            0%{   
+                width:0%;
+                height:0rem;
+            }
+            40%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            60%{
+                width:50%;
+                height:15rem;
+                #ani_2{
+                    display:none;
+                }
+            }
+            80%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            100%{
+                width:50%;
+                height:15rem;
+                
+            }
+        }
+@keyframes pop3{
+            0%{   
+                width:0%;
+                height:0rem;
+            }
+            40%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            60%{
+                width:50%;
+                height:15rem;
+                #ani_2{
+                    display:none;
+                }
+            }
+            80%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            100%{
+                width:50%;
+                height:15rem;
+                
+            }
+        }
+@keyframes pop4{
+            0%{   
+                width:0%;
+                height:0rem;
+            }
+            40%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            60%{
+                width:50%;
+                height:15rem;
+                #ani_2{
+                    display:none;
+                }
+            }
+            80%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            100%{
+                width:50%;
+                height:15rem;
+                
+            }
+        }
+@keyframes pop5{
+            0%{   
+                width:0%;
+                height:0rem;
+            }
+            40%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            60%{
+                width:50%;
+                height:15rem;
+                #ani_2{
+                    display:none;
+                }
+            }
+            80%{
+                height:13rem;
+                width:45%;
+                #ani_2{
+                    display:none;
+                }
+            }
+            100%{
+                width:50%;
+                height:15rem;
+                
+            }
+        }
