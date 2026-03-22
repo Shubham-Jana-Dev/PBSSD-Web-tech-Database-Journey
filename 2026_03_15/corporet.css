@@ -25,7 +25,8 @@ body{
     width:11%;
     height:4rem;
     background:url("assets/swiggy-logo_C.webp");
-    background-size:cover;
+    background-size: contain; 
+    background-repeat: no-repeat;
     border:2px dotted blue;
 
 }
@@ -97,3 +98,74 @@ h1{
             margin-top:4%;
             border:2px dotted rgb(183, 16, 43);
         }
+.dots3{
+    height:0rem;
+    width:0%;
+    display:none;
+}
+.side_bar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Completely off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    transition: right 0.4s ease; /* Smooth sliding effect */
+    z-index: 1000;
+    padding-top: 60px;
+}
+#menu-toggle:checked ~ .side_bar {
+    right: 0; /* Slide into view */
+}
+@media (orientation: portrait){
+.right_portion{
+    display:none;
+}
+.nav_bar{
+    height:6rem;
+    display:flex;
+    justify-content:space-between;
+    border:2px solid rgb(209, 23, 23);
+    padding: 0 15px;
+    align-items:center;
+}
+.dots3 {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1001;
+        position: relative;
+
+        background: radial-gradient(circle, #333 2px, transparent 2.5px);
+        background-size: 100% 33%;
+        border:3px solid blue;
+    }
+
+    #menu-toggle:checked ~ .main_bg_map {
+        filter: blur(4px) brightness(0.7);
+        pointer-events: none;
+    }
+
+
+.logo{
+    width: 120px; 
+        height: 40px;
+        background-size: contain; 
+        background-repeat: no-repeat;
+}
+.left_arrow, .right_arrow{
+    width:45%;
+    height:10rem;
+}
+}
+.side_bar ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.side_bar a {
+    font-size: 1.2rem;
+    display: block;
+}
