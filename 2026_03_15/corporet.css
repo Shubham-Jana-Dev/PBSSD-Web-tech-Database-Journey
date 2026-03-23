@@ -12,6 +12,7 @@
 }
 *{
     font-family: Gilroy-Medium;
+    outline: 2px dotted red !important;
 }
 body{
     margin:0;
@@ -299,7 +300,6 @@ h1{
                 
             }
         }
-
 @keyframes pop2{
             0%{   
                 width:0%;
@@ -325,7 +325,7 @@ h1{
         }
 .second_part{
     margin-top:60%;
-    height:0rem;
+    width:20rem;
     width:100%;
     background:none;
 }
@@ -333,13 +333,30 @@ h1{
     display:flex;
     width:100%;
     text-align:center;
+    
     border:2px dotted black;
     align-items:center;
     justify-content:center;
     gap:1%;
 }
+.ipo_heading{
+    color:rgba(68, 71, 74, 0.75);
+}
 .right_line{
-    height:0.2rem;
+    height:0.19rem;
     width:2.4%;
     background: rgb(255, 82, 0);
+}
+.next_video{
+    height:30rem;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+video{
+margin-top:11%;
+    width:56%;
+    border-radius:4rem;
+    background-size:100% 100%;
 }
