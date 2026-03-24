@@ -1,0 +1,42 @@
+Data Definition Language (DDL)
+=> Deals with the structure of the table.
+=> DDL are auto-committed.
+
+DDL Commands:
+
+-> Create 
+-> Alter
+-> Truncate
+-> Drop
+-> Rename
+
+1. Create:-
+=> The CREATE command is used to create new database
+objects such as table, views, indexes, or schemas, for exampla:
+-----syntax-----
+Create table student(
+    StudentID int primary key, 
+    Name varchar(50), 
+    Age int
+);
+----------------
+
+2. Alter:- 
+=> The Alter command is used to modify an existing database object, such as a table or view, without recreating it. For example:
+-----Syntax-----
+Alter table student Add COLUMN email verchar(100);
+----------------
+
+3. Truncate
+=> The TRUNCATE TABLE command in MySQL is a Data Definition Language (DDL) operation used to quickly remove all rows from a table while keeping the table structure (columns, constraints, and indexes) intact.
+
+-----Syntax-----
+TRUNCATE TABLE table_name;
+----------------
+
+4. Drop
+=> The TRUNCATE TABLE command in MySQL is a Data Definition Language (DDL) operation used to quickly remove all rows from a table while keeping the table structure (columns, constraints, and indexes) intact.
+
+-----Syntax-----
+DROP TABLE table_name;
+----------------
