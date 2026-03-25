@@ -24,7 +24,7 @@ body {
 }
 .text_box{
     width:120%;
-    border:2px solid blue;
+    
 }
 .nav_bar {
     /* position:absolute; */
@@ -179,7 +179,7 @@ h1 {
         margin-right: 2rem;
         background: radial-gradient(circle, #333 2px, transparent 2.5px);
         background-size: 100% 33%;
-        border: 3px solid blue;
+        
     }
 
     #menu-toggle:checked~.main_bg_map {
@@ -498,7 +498,7 @@ input[name="swiggy-tab"] { display: none !important; }
 }
 
 /* 6. Fix Content Widths */
-.text_box { flex: 1.3;  width:44%; }
+.text_box { flex: 1.3;  width:44%; color:#97989c;}
 .media_box { flex: 2; width:93%; padding-left:20%; }
 .media_box img { width: 100%; border-radius: 24px; }
 #mission-trigger:checked ~ .side_nav label[for="mission-trigger"]::after {
@@ -527,7 +527,7 @@ input[name="swiggy-tab"] { display: none !important; }
     display:flex;
     justify-content:center;
     align-items:center;
-    border:2px solid blue;
+    /* border:2px solid blue; */
     width:150%;
     height:30rem;
 }
@@ -540,7 +540,6 @@ input[name="swiggy-tab"] { display: none !important; }
     width:0%;
 }
 .tab_system{
-    border:2px solid rgb(0, 255, 13);
     width:160%;
     height:40rem;
 }
@@ -553,7 +552,6 @@ input[name="swiggy-tab"] { display: none !important; }
     height:7rem;
 }
 .display_area{
-   border:2px solid blue;
     width:100%;
 }
 .know_us_container{
@@ -574,4 +572,53 @@ input[name="swiggy-tab"] { display: none !important; }
     width: 4.3%;
     background: rgb(255, 82, 0);
 }
+#more_button{
+    width:40%;
+    height:4rem;
+    background:rgb(255, 82, 0);
+    border:none;
+    border-radius:15px;
+    font-size:x-large;
+    color:white;
+}
+.industry_heading{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.industry_content{
+    width:100%;
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 2%;
 
+}
+.right_textu21{
+    width:40%;
+    height:40vh;
+    font-size:x-large;
+    color:#97989c;
+}
+.r_i{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:37%;
+    height:40vh;
+    border: 2px solid gray;
+    border-radius:30px;
+}
+.left_image{
+    width:90%;
+    height:35vh;
+    background:url("assets/flying_hero.webp") no-repeat;
+    background-size:100% 100%;
+
+}
+.left_image:hover{
+    width:100%;
+    height:40vh;
+}
