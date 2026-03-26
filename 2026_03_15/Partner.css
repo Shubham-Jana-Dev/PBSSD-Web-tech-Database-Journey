@@ -40,14 +40,23 @@ body{
 
 }
 .logo{
+    margin-top:7vh;
     height:5%;
     width:5%;
+   
     /* background:url("assets/") */
 }
 .text{
+    margin-top:3vh;
     height:40%;
     width:100%
     
+}
+#line_svg{
+    margin-bottom:2vh;
+}
+.animation{
+    border:3px solid blue;
 }
 #md{
     font-family:Gilroy-Medium;
@@ -60,4 +69,62 @@ body{
 .left3{
     height:100%;
     width:50%;
+}
+.animation{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+.animation_line{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#text_ani1{
+    font-size:0%;
+    color:black;
+    animation-name: pop1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: normal;
+}
+#text_ani2{
+    font-size:0%;
+    color:black;
+    animation-name: pop1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+    animation-timing-function: normal;
+}
+.ani_text{
+    font-size:0%;
+    font-size:0%;
+    color:black;
+    animation-name: pop1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: normal;
+}
+@keyframes pop1 {
+    100%{
+        
+        font-size:xx-large;
+        color:white;
+        
+    }
+}
+/* @keyframes pop1{
+    100%{
+        font-size:xx-large;
+        color:white;
+    }
+} */
+.linet{
+    height:0.5rem;
+    width:10%;
+    background:rgb(239, 232, 232)
 }
