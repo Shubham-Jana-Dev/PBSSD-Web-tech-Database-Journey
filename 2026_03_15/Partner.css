@@ -15,7 +15,7 @@
 body{
     margin:0;
     padding:0;
-    outline: 2px dotted blue !important;
+    /* outline: 2px dotted blue !important; */
 }
 
 .upper_portion{
@@ -55,9 +55,7 @@ body{
 #line_svg{
     margin-bottom:2vh;
 }
-.animation{
-    border:3px solid blue;
-}
+
 #md{
     font-family:Gilroy-Medium;
     color:white;
@@ -111,4 +109,33 @@ body{
     28% { opacity: 1; transform: translateY(0); }  /* Visible Hold */
     33% { opacity: 0; transform: translateY(-20px); } /* Fade Out & Slide Up */
     100% { opacity: 0; }
+}
+.animation_lines{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:0.3rem;
+    width:8rem;
+     background:rgba(131, 127, 127, 0.912);
+     border-radius:12px;
+}
+.lines{
+    animation: swiggyFade2 12s infinite ease-in-out;
+    pointer-events: none;
+    height:0.3rem;
+    width:100%;
+    opacity: 0;    
+    pointer-events: none;
+    background:rgba(254, 254, 254, 0.912);
+    border-radius:12px;
+}
+#l1 { animation-delay: 0s; }
+#l2 { animation-delay: 4s; }
+#l3 { animation-delay: 8s; }
+@keyframes swiggyFade2 {
+    0% { opacity: 0;}
+    5% { opacity: 1;}   
+    28% { opacity: 1;}  
+    33% { opacity: 0;} 
+    100% { opacity: 0;}
 }
