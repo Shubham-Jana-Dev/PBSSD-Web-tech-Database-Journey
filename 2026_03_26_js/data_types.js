@@ -22,4 +22,20 @@ console.log(typeof(b));
 
 // 0/0
 
-
+var c = 153;
+var temp = c;
+var temp2 = c;
+var count = 0;
+while(temp!=0){
+    count = count + 1;
+    temp = parseInt(temp/10);
+}
+while(temp2!=0){
+    
+    var rem = temp2%10;
+    console.log(rem);
+    am
+    temp2 = parseInt(temp2/10)
+}
+console.log(rem)
+console.log(count)
