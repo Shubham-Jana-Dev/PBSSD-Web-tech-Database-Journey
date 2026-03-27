@@ -81,50 +81,34 @@ body{
     justify-content:center;
     align-items:center;
 }
-#text_ani1{
-    font-size:0%;
-    color:black;
-    animation-name: pop1;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-timing-function: normal;
+.animation {
+    position: relative;
+    height: 120px;      
+    width: 100%;
+    /* margin-top: 0px; */
+    display: block;    
+    overflow: hidden; 
 }
-#text_ani2{
-    font-size:0%;
-    color:black;
-    animation-name: pop1;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 6s;
-    animation-timing-function: normal;
+.ani_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;          
+    padding: 0;
+    opacity: 0;        
+    color: white;
+    font-family: 'Gilroy-ExtraBold';
+    pointer-events: none;
+    animation: swiggyFade 12s infinite ease-in-out;
 }
-.ani_text{
-    font-size:0%;
-    font-size:0%;
-    color:black;
-    animation-name: pop1;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-timing-function: normal;
-}
-@keyframes pop1 {
-    100%{
-        
-        font-size:xx-large;
-        color:white;
-        
-    }
-}
-/* @keyframes pop1{
-    100%{
-        font-size:xx-large;
-        color:white;
-    }
-} */
-.linet{
-    height:0.5rem;
-    width:10%;
-    background:rgb(239, 232, 232)
+#t1 { animation-delay: 0s; }
+#t2 { animation-delay: 4s; }
+#t3 { animation-delay: 8s; }
+@keyframes swiggyFade {
+    0% { opacity: 0; transform: translateY(20px); }
+    5% { opacity: 1; transform: translateY(0); }   /* Fade In & Slide Up */
+    28% { opacity: 1; transform: translateY(0); }  /* Visible Hold */
+    33% { opacity: 0; transform: translateY(-20px); } /* Fade Out & Slide Up */
+    100% { opacity: 0; }
 }
