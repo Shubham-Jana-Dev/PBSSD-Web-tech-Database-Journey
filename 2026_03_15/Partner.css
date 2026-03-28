@@ -10,7 +10,7 @@
 
 * {
     font-family: Gilroy-Medium;
-    outline: 2px dotted rgb(217, 255, 0) !important;
+    outline: 2px dotted rgb(21, 0, 255) !important;
 }
 body{
     margin:0;
@@ -67,6 +67,9 @@ body{
 .left3{
     height:100%;
     width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .animation{
     display:flex;
@@ -138,4 +141,29 @@ body{
     28% { opacity: 1;}  
     33% { opacity: 0;} 
     100% { opacity: 0;}
+}
+.main_form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80%;
+    width:80%;
+    border-radius:15px;
+    background:white;
+    font-size:x-large;
+}
+h2{
+    position:relative;
+    bottom:8%;
+    color:rgb(52, 51, 51);
+}
+.from_mid{
+    height:90% ;
+    width:90%;
+}
+.info{
+    display:flex;
+}
+p{
+    font-size:small;
 }
