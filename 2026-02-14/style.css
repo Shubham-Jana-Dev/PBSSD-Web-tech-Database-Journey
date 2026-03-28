@@ -1,0 +1,177 @@
+
+    .parent{
+        height: 100vh;
+        width: 100%;
+        border: 2px solid black;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(8,1fr) ;
+        gap: 8px;
+    }
+    .child{
+       
+        border: 2px solid black;
+    }
+    .child1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 4;
+    background: rgb(148, 252, 57);
+    border: 2px solid black;
+}
+.child2{
+   
+    background: rgb(174, 115, 115);
+    border: 2px solid black;
+}
+.child3{
+   
+   background: rgb(157, 6, 171);
+   border: 2px solid black;
+}
+.child4{
+   
+   background: rgb(73, 238, 241);
+   border: 2px solid black;
+}
+.child5{
+    grid-column-start: 6;
+    grid-column-end: 9;
+   background: rgb(227, 198, 105);
+   border: 2px solid black;
+}
+.child6{
+   
+   background: rgb(242, 85, 42);
+   border: 2px solid black;
+}
+.child7{
+   
+   background: rgb(239, 240, 185);
+   border: 2px solid black;
+}
+.child8{
+   grid-column: 5;
+   grid-row-start:2;
+    grid-row-end: 4;
+   background: rgb(244, 126, 93);
+   border: 2px solid black;
+}
+.child9{
+   grid-column: 6;
+   grid-row-start:2;
+    grid-row-end: 4;
+   background: rgb(226, 239, 154);
+   border: 2px solid black;
+}
+.child10{
+   grid-column: 7;
+   grid-row-start:2;
+   grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-end: 4;
+   background: rgb(253, 253, 253);
+   border: 2px solid black;
+}
+.child12{
+   grid-row: 3;
+   grid-column-start: 3;
+    grid-column-end: 5;
+   background: rgb(250, 249, 249);
+   border: 2px solid black;
+}
+.child11{
+   grid-row: 4;
+   grid-column-start: 1;
+    grid-column-end: 4;
+   background: rgb(29, 197, 248);
+   border: 2px solid black;
+}
+.child13{
+   
+   background: rgb(105, 253, 37);
+   border: 2px solid black;
+}
+.child14{
+   grid-column: 5;
+   grid-row-start: 4;
+   grid-row-end: 6;
+   background: rgb(85, 2, 130);
+   border: 2px solid black;
+}
+.child15{
+   grid-column: 6;
+   grid-column-start: 6;
+   grid-column-end: 8;
+   background: rgb(198, 126, 157);
+   border: 2px solid black;
+}
+.child16{
+   
+   background: rgb(71, 138, 255);
+   border: 2px solid black;
+}
+.child17{
+   
+   background: rgb(242, 121, 255);
+   border: 2px solid black;
+}
+.child18{
+   
+   background: rgb(202, 200, 202);
+   grid-column-start: 2;
+   grid-column-end: 4;
+   border: 2px solid black;
+}
+.child19{
+   
+   background: rgb(3, 167, 255);
+   border: 2px solid black;
+}
+.child20{
+   
+   background: rgb(233, 255, 126);
+   border: 2px solid black;
+}
+.child21{
+   
+   background: rgb(198, 125, 169);
+   border: 2px solid black;
+}
+.child22{
+   grid-column: 8;
+   grid-row-start: 5;
+   grid-row-end: 7;
+   background: rgb(16, 52, 251);
+   border: 2px solid black;
+}
+.child23{
+   
+   background: rgb(232, 43, 97);
+   border: 2px solid black;
+}
+.child24{
+   
+   background: rgb(252, 252, 252);
+   border: 2px solid black;
+}
+.child25{
+   background: rgb(111, 1, 111);
+   border: 2px solid black;
+}
+.child26{
+    grid-column: 4;
+    grid-column-start: 4;
+    grid-column-end: 6;
+   background: rgb(238, 123, 161);
+   border: 2px solid black;
+}
+.child27{
+   background: rgb(215, 77, 22);
+   border: 2px solid black;
+}
+.child28{
+   background: rgb(1, 58, 12);
+   border: 2px solid black;
+}
