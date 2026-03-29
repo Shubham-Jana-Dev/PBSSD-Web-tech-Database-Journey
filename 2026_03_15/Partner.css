@@ -247,7 +247,7 @@ button{
 }
 .oline{
     position:relative;
-    bottom:16%;
+    bottom:20%;
     height:1.6%;
     width:7%;
     background:rgb(255, 82, 0);
@@ -311,7 +311,7 @@ button{
     height:20%;
 }
 #l1p{
-    font-size:x-large;
+    font-size:large;
     position:relative;
     bottom:8%;
     color:rgb(123, 118, 118);
@@ -320,4 +320,17 @@ button{
     font-family:Gilroy-ExtraBold;
     position:relative;
     bottom:14%;
+}
+#ml_for{
+    font-weight:bolder;
+    font-size:large;
+}
+#ml_top{
+   font-size:smaller;
+   color:rgb(23, 23, 23);
+   text-align:start;
+}
+.mnl_top{
+    position:absolute;
+    top:64%;
 }
