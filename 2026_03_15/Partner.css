@@ -10,7 +10,7 @@
 
 * {
     font-family: Gilroy-Medium;
-     /* outline: 2px dotted rgb(21, 0, 255) !important; */
+    outline: 2px dotted rgb(21, 0, 255) !important;
 }
 body{
     margin:0;
@@ -54,6 +54,8 @@ body{
 }
 
 #md{
+    position:relative;
+    top:10%;
     font-family:Gilroy-Medium;
     color:white;
 }
@@ -78,6 +80,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    border:2px solid rgb(251, 246, 246);
 }
 .animation {
     position: relative;
@@ -115,9 +118,12 @@ body{
     justify-content:center;
     align-items:center;
     height:0.3rem;
-    width:8rem;
-     background:rgba(131, 127, 127, 0.912);
-     border-radius:12px;
+    width:4rem;
+    background:rgba(131, 127, 127, 0.912);
+    border-radius:12px;
+    position:relative;
+    top:8%;
+
 }
 .lines{
     animation: swiggyFade2 12s infinite ease-in-out;
@@ -162,14 +168,15 @@ h2{
     display:flex;
     justify-content:space-between;
     position:relative;
-    bottom:8%;
+    bottom:15%;
     display:flex;
+    
     
 }
 #from_pa{
     position:relative;
     bottom:30%;
-    font-size:large;
+    font-size:small;
     color:rgb(123, 118, 118);
 }
 .icon{
@@ -190,32 +197,38 @@ h2{
 }
 input{
     position:relative;
-    bottom:60%;
+    bottom:100%;
     height:100%;
     width:100%;
     border-radius:20px;
-    font-size:large;
     border:2px solid rgb(205, 198, 198);
     padding-left:6%;
     color:rgb(0, 0, 0);
     text-decoration:none;
 }
 button{
-    /* margin-bottom:20%; */
     height:20%;
     width:100%;
-    border-radius:12px;
-    font-size:x-large;
-    border:2px solid rgb(205, 198, 198);
+    position:relative;
+    bottom:10%;
+    border-radius:10px;
+    font-size:large;
+    border:2px solid rgb(255, 255, 255);
     padding-left:6%;
     color:rgb(255, 255, 255);
     text-decoration:none;
-
+    background:rgb(205, 208, 212);
+}
+#gt_st{
+    position:relative;
+    bottom:10%;
 }
 #policy{
-    font-size:small;
+    font-size:x-small;
     text-align:center;
     color:rgb(205, 198, 198);
+    position:relative;
+    bottom:10%;
 }
 #iac{
     color:black;
@@ -250,6 +263,7 @@ button{
     background:rgb(248, 244, 253);
     border-radius:23px;
     gap:3%;
+    
     position:relative;
     bottom:4rem;
 }
