@@ -10,7 +10,7 @@
 
 * {
     font-family: Gilroy-Medium;
-     outline: 2px dotted rgb(21, 0, 255) !important;
+     /* outline: 2px dotted rgb(21, 0, 255) !important; */
 }
 body{
     margin:0;
@@ -27,10 +27,7 @@ body{
     justify-content:center;
     align-items:center;
 }
-.lower_portion{
-    height:43vh;
-    width:100%;
-}
+
 .maint{
     width:60%;
     height:70%;
@@ -222,4 +219,91 @@ button{
 }
 #iac{
     color:black;
+}
+.lower_portion{
+    height:43vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.m_lower{
+    height:80%;
+    width:40%;
+}
+.oline{
+    position:relative;
+    bottom:16%;
+    height:1.6%;
+    width:7%;
+    background:rgb(255, 82, 0);
+    border-radius:3px;
+}
+
+.steps{
+    display:flex;
+    align-items:center;
+    margin-top:3%;
+    height:28vh;
+    width:87%;
+    background:rgb(248, 244, 253);
+    border-radius:23px;
+    gap:3%;
+    position:relative;
+    bottom:4rem;
+}
+.left_map{
+    margin-left:4%;
+    width:2%;
+    height:80%;
+}
+.right_steps{
+    height:80%;
+    width:70%;
+}
+.blue_dot{
+    height:6%;
+    /* width:10%; */
+    background:rgb(82, 12, 213);
+    border-radius:50%;
+    
+}
+.hst{
+    color:rgb(89, 85, 85);
+}
+.std{
+    position:relative;
+    bottom:20%;
+    width:120%;
+}
+#hst1{
+    bottom:9%;
+}
+#std3{
+    position:relative;
+    bottom:15%;
+}
+#std2{
+    position:relative;
+    bottom:10%;
+}
+.vline{
+    margin-left:40%;
+    height:30%;
+    border-left:2px dotted rgb(171, 171, 175);
+}
+#vline3{
+    height:20%;
+}
+#l1p{
+    font-size:x-large;
+    position:relative;
+    bottom:8%;
+    color:rgb(123, 118, 118);
+}
+#get2{
+    font-family:Gilroy-ExtraBold;
+    position:relative;
+    bottom:14%;
 }
