@@ -20,3 +20,5 @@ let ammount = 124;
 discount = ammount >100?10:0;
 total_bill = ammount - ammount*discount/100;
 console.log("Total Bill = ",total_bill);
+
+// hi bro
