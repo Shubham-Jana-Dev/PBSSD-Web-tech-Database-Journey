@@ -84,3 +84,16 @@ where job in ("junior engineer","intern");
 
 #end session (2026-04-05)
 drop database check_constrain
+
+create Table employee(emp_id int,
+emp_name VARCHAR(200),
+emp_city VARCHAR(300),
+emp_country VARCHAR(400));
+
+insert into employee(emp_id,emp_name,emp_city,emp_country)
+values(1,"shubham","kolkata","IN"),
+(2,"Shuvanker","Rachi","IN"),
+(3,"Vivek","Mumbai","IN");
+
+select * from employee;
+update employee set emp_name = "Ram" WHERE emp_id = 2 or emp_id = 1;
