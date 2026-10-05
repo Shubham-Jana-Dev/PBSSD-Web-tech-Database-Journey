@@ -2,7 +2,7 @@
 #include <string>
 #include <cstdlib>
 
-// Helper function to remove newlines and extra spaces for the URL string
+// Helto remove newlines and extra spaces for the URL string
 std::string cleanHtmlForUrl(std::string html) {
     std::string cleanText = "";
     for (char c : html) {
