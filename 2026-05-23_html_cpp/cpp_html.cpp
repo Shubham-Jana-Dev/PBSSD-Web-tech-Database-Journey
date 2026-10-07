@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-    // 1. Define your HTML using a raw string literal
+    // 1. HTML using a raw string literal
     std::string htmlContent = R"(
 <!DOCTYPE html>
 <html lang="en">
